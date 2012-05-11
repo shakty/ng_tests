@@ -1,0 +1,74 @@
+<!doctype html>
+
+
+<script src="http://localhost:8080/socket.io/socket.io.js"></script> 
+<script src="http://localhost:8080/javascripts/nodegame.js" charset="utf-8"></script>
+
+<!-- JQUERY UI STARTS -->
+<link type="text/css" href="../lib/jqueryui/css/ui-lightness/jquery-ui-1.8.20.custom.css" rel="Stylesheet" />
+<script src="../lib/jqueryui/js/jquery-1.7.2.min.js" charset="utf-8"></script>
+<script src="../lib/jqueryui/js/jquery-ui-1.8.20.custom.min.js" charset="utf-8"></script>
+<!-- JQUERY UI ENDS -->
+
+
+<body>
+<h2>Chernoff Faces Test</h2>
+<div id="root"></div>
+
+<script>
+window.onload = function() {
+
+  //node.window.generateRandomRoot();
+	
+	var t = new node.window.Table({auto_update: true});
+  $( "root").append(t.table);
+		document.getElementById('root').appendChild(t.table);
+
+var data = [1,2,3]; 
+var dims = ['x','y','z'];
+
+t.addColumn([1,2,3]);
+t.addColumn([4,5,6]);
+t.addColumn([7,8,9]);
+
+
+
+//
+//t._add(data, dims);
+//t._add(data, dims);
+//t._add(data, dims);
+
+console.log(t.db);
+
+//for (var i=0.1; i<5; i++) {
+//  var a = [i,'a'];
+//  t.addColumn(a);
+//}
+//
+//console.log(t.fetch());
+//
+//t.addClass('culo2');
+
+//t.select('x','>',1)
+// .addClass(['culo','c2']);
+//
+//console.log('--');
+//console.log(t.fetch());
+
+//t.removeClass('culo');
+//console.log('--');
+//console.log(t.fetch());
+
+//console.log('Getting');
+//var o = t.get(2);
+//console.log(o);
+//
+//console.log(t.__proto__.get.toString());
+//console.log(t.get.toString());
+	
+//	tbl.parse();
+	
+}
+</script>
+</body>
+</html>

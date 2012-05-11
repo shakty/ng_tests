@@ -1,0 +1,51 @@
+<!doctype html>
+
+
+<script src="http://localhost:8080/socket.io/socket.io.js"></script> 
+<script src="http://localhost:8080/javascripts/nodegame.js" charset="utf-8"></script>
+
+<!-- JQUERY UI STARTS -->
+<link type="text/css" href="../lib/jqueryui/css/ui-lightness/jquery-ui-1.8.20.custom.css" rel="Stylesheet" />
+<script src="../lib/jqueryui/js/jquery-1.7.2.min.js" charset="utf-8"></script>
+<script src="../lib/jqueryui/js/jquery-ui-1.8.20.custom.min.js" charset="utf-8"></script>
+<!-- JQUERY UI ENDS -->
+
+
+<body>
+<h2>Chernoff Faces Test</h2>
+<div id="root"></div>
+
+<script>
+window.onload = function() {
+	
+	var l = new node.window.List();
+  document.getElementById('root').appendChild(l.DL);
+
+var data = [1,2,3]; 
+var dims = ['x','y','z'];
+
+l.addDT(1);
+l.addDD('a');
+l.addDT(2);
+l.addDD('a');
+l.addDD('b');
+l.addDD('c');
+l.addDT(3);
+l.addDT(4);
+l.addDT(5);
+l.addDD('a');
+l.addDD('b');
+l.addDD('c');
+
+l.reverse();
+l.parse();
+
+
+console.log(l.db);
+
+
+	
+}
+</script>
+</body>
+</html>

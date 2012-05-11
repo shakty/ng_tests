@@ -1,0 +1,56 @@
+div {
+	border: 1px solid black;
+}
+
+div#creation {
+  float: left;
+  width: 58%;
+  height: 510px;
+  overflow-y: auto;
+}
+
+table#cf_table {
+  border: 1px solid #CCC;
+}
+
+table#cf_table td {
+  border: 1px solid #CCC;
+  vertical-align: top;
+  width: 200px;
+}
+
+/* Submission */
+
+dl#submission dt{
+  display: inline;
+}
+
+#submission button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+div#container {
+  float: right;
+	height: 500px;
+  width: 40%;
+  border: 0;
+}
+
+div#history {
+  height: 400px;
+  vertical-align: top;
+	margin-bottom: 10px;
+	overflow-y: auto;
+}
+
+div#done_box {
+	height: 100px;
+}
+
+div#done_box button{
+  height: 100%;
+	width: 100%;
+	font-size: 20px;
+}
